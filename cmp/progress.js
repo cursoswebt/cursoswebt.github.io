@@ -9,4 +9,4 @@ class MiProgeso
 }
 
 customElements.define(
-  "progress", MiProgeso);
+  "mi-progreso", MiProgeso);

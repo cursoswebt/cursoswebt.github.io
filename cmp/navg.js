@@ -57,4 +57,4 @@ class MiNav extends HTMLElement {
 }
 
 customElements.define(
-  "navg", MiNav);
+  "mi-nav", MiNav);
