@@ -4,7 +4,7 @@
  */
 
 /**
- * @typedef {Object} Cursos
+ * @typedef {Object} Curso
  * @property {string} nombre
  */
 
