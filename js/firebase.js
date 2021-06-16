@@ -1,9 +1,9 @@
 firebase.initializeApp({
-    apiKey: "AIzaSyAGs1ocP7T0PkDgHu7fzVG3prjnGAnmerM",
-    authDomain: "pruebabdf94.firebaseapp.com",
-    projectId: "pruebabdf94",
-    storageBucket: "pruebabdf94.appspot.com",
-    messagingSenderId: "440497640142",
-    appId: "1:440497640142:web:38cd03b995bc181cfb369f",
-    measurementId: "G-TG5NX51KRW"
+    apiKey: "AIzaSyCwR_DGPnnINHMqzffhLoF6hdnj9LmZYB0",
+    authDomain: "cursoweb39.firebaseapp.com",
+    projectId: "cursoweb39",
+    storageBucket: "cursoweb39.appspot.com",
+    messagingSenderId: "561186197046",
+    appId: "1:561186197046:web:3b87d13433b3d6e7c55297",
+    measurementId: "G-1Q1ZM6MP7N"
 });
