@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,
+       initial-scale=1.0">
+  <title>Cursos</title>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js">
+    </script>
+  <script src="js/firebase.js">
+  </script>
+  <script type="module"
+    src="cmp/navg.js">
+    </script>
+  <script type="module"
+    src="cmp/footer.js">
+    </script>
+  <link rel="stylesheet"
+    href="css/estilos.css">
+</head>
+<body>
+  <form name="forma">
+    <navg></navg>
+    <header>
+      <h1>Curso</h1>
+      <div class="herramientas">
+        <a href="cursos.html">
+          Cancelar</a>
+        <button>Guardar</button>
+        <button name="eliminar"
+          type="button">
+          Eliminar
+        </button>
+      </div>
+    </header>
+    <p>
+      <label>
+        Nombre
+        <input name="nombre"
+          type="text" required
+          value="Cargando…">
+      </label>
+    </p>
+    <footer></footer>
+  </form>
+  <script type="module"
+    src="js/CtrlPasatiempo.js">
+    </script>
+</body>
+</html>

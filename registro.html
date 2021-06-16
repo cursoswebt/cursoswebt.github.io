@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,
+       initial-scale=1.0">
+  <title>Registro de Usuario</title>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js">
+    </script>
+  <script src="js/auth.js">
+  </script>
+  <script type="module"
+    src="cmp/navg.js">
+    </script>
+  <script type="module"
+    src="cmp/footer.js">
+    </script>
+  <script type="module"
+    src="cmp/progress.js">
+    </script>
+  <link rel="stylesheet"
+    href="css/estilos.css">
+</head>
+<body>
+  <form name="forma">
+    <navg></navg>
+    <header>
+      <h1>Registrar Cliente</h1>
+      <div class="herramientas">
+        <a href="perfil.html">
+          Cancelar</a>
+        <button type="submit">
+          Guardar
+        </button>
+      </div>
+    </header>
+    <p>
+      <label>
+        Solicito Correo
+        <input name="reg"
+          type="email" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Avatar
+        <input name="avatar"
+          type="file" required
+          accept=".png,.jpg,.jpeg,.gif">
+      </label>
+    </p>
+    <p>
+      <label>
+        Cursos
+        <select
+          name="cursoId">
+          <option>
+            Procesando...
+          </option>
+        </select>
+      </label>
+    </p>
+    <fieldset>
+      <legend>Profesor</legend>
+      <ul id="listaRoles"
+        class="checks">
+        <li>
+          <progress>
+          </progress>
+        </li>
+      </ul>
+    </fieldset>
+    <footer></footer>
+  </form>
+  <script type="module"
+    src="js/CtrlRegistro.js">
+    </script>
+</body>
+</html>

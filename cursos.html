@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,
+       initial-scale=1.0">
+  <title>Cursos</title>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js">
+    </script>
+  <script src="js/firebase.js">
+  </script>
+  <script type="module"
+    src="cmp/navg.js">
+    </script>
+  <script type="module"
+    src="cmp/footer.js">
+    </script>
+  <script type="module"
+    src="cmp/progress.js">
+    </script>
+  <link rel="stylesheet"
+    href="css/estilos.css">
+</head>
+<body>
+  <navg></navg>
+  <header>
+    <h1>Cursos</h1>
+    <div class="herramientas">
+      <a
+        href="cursoRegistro.html">
+        Agregar...</a>
+    </div>
+  </header>
+  <ul id="lista" class="lista">
+    <li>
+      <progress>
+      </progress>
+    </li>
+  </ul>
+  <footer></footer>
+  <script type="module"
+    src="js/CtrlCursos.js">
+    </script>
+</body>
+</html>
