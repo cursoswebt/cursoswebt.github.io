@@ -25,7 +25,7 @@ import {
     collection("Usuario");
   
   export function
-    selectCursos(select,
+    selectCurso(select,
       valor) {
     valor = valor || "";
     daoCurso.
@@ -40,7 +40,7 @@ import {
         },
         e => {
           muestraError(e);
-          selectCursos(
+          selectCurso(
             select, valor);
         }
       );

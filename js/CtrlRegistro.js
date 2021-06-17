@@ -1,6 +1,6 @@
 import {
     getAuth
-  } from "../lib/fabrica.js";
+  } from "../lib/auth.js";
   import {
     getString,
     muestraError
@@ -11,7 +11,7 @@ import {
   import {
     checksRoles,
     guardaUsuario,
-    selectCursos
+    selectCurso
   } from "./usuarios.js";
   
   const forma = document["forma"];
@@ -26,7 +26,7 @@ import {
       ["Administrador"])) {
       forma.addEventListener(
         "submit", guarda);
-      selectCursos(
+      selectCurso(
         forma.cursoId, "");
       checksRoles(listaRoles, []);
     }
