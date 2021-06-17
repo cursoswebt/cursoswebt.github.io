@@ -3,7 +3,7 @@ import {
 } from "../js/seguridad.js";
 import {
   getAuth
-} from "../lib/auth.js";
+} from "../lib/fabrica.js";
 import {
   muestraError
 } from "../lib/util.js";
