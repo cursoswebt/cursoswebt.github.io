@@ -32,7 +32,7 @@ class MiNav extends HTMLElement {
         await cargaRoles(
           usu.email);
 
-      if (roles.has("Cliente")) {
+      if (roles.has("Aprendiz")) {
         html +=
           `<li>
             <a href=
