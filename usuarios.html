@@ -5,7 +5,7 @@
   <meta name="viewport"
     content="width=device-width,
        initial-scale=1.0">
-  <title>Chat/Comentarios</title>
+  <title>Usuarios</title>
   <script
     src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js">
     </script>
@@ -15,7 +15,11 @@
   <script
     src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js">
     </script>
-  <script src="js/firebase.js">
+  <!-- Agrega el manejo de storage. -->
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js">
+    </script>
+  <script src="js/init.js">
   </script>
   <script type="module"
     src="cmp/mi-nav.js">
@@ -31,26 +35,22 @@
 </head>
 <body>
   <mi-nav></mi-nav>
-  <form name="forma">
-    <header>
-      <h1>Chat/Comentarios</h1>
-      <div class="herramientas">
-        <input name="texto"
-          required
-          placeholder="Mensaje">
-        <button>Enviar</button>
-      </div>
-    </header>
-    <ul id="lista" class="lista">
-      <li>
-        <mi-progreso>
-        </mi-progreso>
-      </li>
-    </ul>
-    <mi-footer></mi-footer>
-  </form>
+  <header>
+    <h1>Usuarios</h1>
+    <div class="herramientas">
+      <a href="usuarioNuevo.html">
+        Agregar…</a>
+    </div>
+  </header>
+  <ul id="lista" class="lista">
+    <li>
+      <mi-progreso>
+      </mi-progreso>
+    </li>
+  </ul>
+  <mi-footer></mi-footer>
   <script type="module"
-    src="js/CtrlComentarios.js">
+    src="js/CtrlUsuarios.js">
     </script>
 </body>
 </html>

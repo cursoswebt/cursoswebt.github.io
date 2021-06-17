@@ -1,3 +1,3 @@
-# cursoswebt.github.io
-Cursos Web - Proyecto Final
-https://cursoswebt.github.io
+# propuweb8.github.io
+Propuesta de Proyecto
+https://propuweb8.github.io

@@ -5,7 +5,7 @@
   <meta name="viewport"
     content="width=device-width,
        initial-scale=1.0">
-  <title>Usuarios</title>
+  <title>Sala de Discusión</title>
   <script
     src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js">
     </script>
@@ -15,10 +15,7 @@
   <script
     src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js">
     </script>
-  <script
-    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js">
-    </script>
-  <script src="js/firebase.js">
+  <script src="js/init.js">
   </script>
   <script type="module"
     src="cmp/mi-nav.js">
@@ -34,22 +31,26 @@
 </head>
 <body>
   <mi-nav></mi-nav>
-  <header>
-    <h1>Perfil</h1>
-    <div class="herramientas">
-      <a href="registro.html">
-        Registrar Usuario</a>
-    </div>
-  </header>
-  <ul id="lista" class="lista">
-    <li>
-      <mi-progreso>
-      </mi-progreso>
-    </li>
-  </ul>
-  <mi-footer></mi-footer>
+  <form name="forma">
+    <header>
+      <h1>Discusiones</h1>
+      <div class="herramientas">
+        <input name="texto"
+          required
+          placeholder="Mensaje">
+        <button>Enviar</button>
+      </div>
+    </header>
+    <ul id="lista" class="lista">
+      <li>
+        <mi-progreso>
+        </mi-progreso>
+      </li>
+    </ul>
+    <mi-footer></mi-footer>
+  </form>
   <script type="module"
-    src="js/CtrlUsuarios.js">
+    src="js/CtrlChat.js">
     </script>
 </body>
 </html>

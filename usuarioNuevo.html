@@ -5,20 +5,20 @@
   <meta name="viewport"
     content="width=device-width,
        initial-scale=1.0">
-  <title>Registro de Usuario</title>
+  <title>Usuario Nuevo</title>
   <script
-  src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js">
-  </script>
-<script
-  src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js">
-  </script>
-<script
-  src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js">
-  </script>
-<script
-  src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js">
-  </script>
-  <script src="js/firebase.js">
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js">
+    </script>
+  <script src="js/init.js">
   </script>
   <script type="module"
     src="cmp/mi-nav.js">
@@ -36,9 +36,9 @@
   <form name="forma">
     <mi-nav></mi-nav>
     <header>
-      <h1>Registrar Cliente</h1>
+      <h1>Usuario Nuevo</h1>
       <div class="herramientas">
-        <a href="perfil.html">
+        <a href="usuarios.html">
           Cancelar</a>
         <button type="submit">
           Guardar
@@ -47,8 +47,8 @@
     </header>
     <p>
       <label>
-        Solicito Correo
-        <input name="reg"
+        Cue
+        <input name="cue"
           type="email" required>
       </label>
     </p>
@@ -60,19 +60,26 @@
           accept=".png,.jpg,.jpeg,.gif">
       </label>
     </p>
+    <!--
+      Maneja una asociación a uno.
+    -->
     <p>
       <label>
-        Cursos
+        Pasatiempo
         <select
-          name="cursoId">
+          name="pasatiempoId">
           <option>
-            Procesando...
+            Cargando…
           </option>
         </select>
       </label>
     </p>
+    <!--
+      Maneja una asociación a
+      muchos.
+    -->
     <fieldset>
-      <legend>Profesor</legend>
+      <legend>Roles</legend>
       <ul id="listaRoles"
         class="checks">
         <li>
@@ -84,7 +91,7 @@
     <mi-footer></mi-footer>
   </form>
   <script type="module"
-    src="js/CtrlRegistro.js">
+    src="js/CtrlUsuarioNuevo.js">
     </script>
 </body>
 </html>

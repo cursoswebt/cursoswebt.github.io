@@ -3,18 +3,18 @@ import {
 } from "../js/seguridad.js";
 import {
   getAuth
-} from "../lib/auth.js";
+} from "../lib/fabrica.js";
 import {
   muestraError
 } from "../lib/util.js";
 
 class MiNav extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = /* html */
+    this.innerHTML =
       `<ul>
         <li>
           <a href="index.html">
-            Inicio</a>
+            Bienvenid@</a>
         </li>
       </ul>`;
     this.ul =
@@ -31,12 +31,11 @@ class MiNav extends HTMLElement {
       const roles =
         await cargaRoles(
           usu.email);
-
-      if (roles.has("Aprendiz")) {
+      if (roles.has("Cliente")) {
         html +=
           `<li>
             <a href=
-              "comentarios.html">Comentarios/Chat</a>
+              "chat.html">Sala Discusión</a>
           </li>`;
       }
       if (roles.has(
@@ -44,11 +43,11 @@ class MiNav extends HTMLElement {
         html +=
           `<li>
             <a href=
-"cursos.html">Cursos</a>
+"pasatiempos.html">Cursos</a>
           </li>
           <li>
             <a href=
-      "perfil.html">Usuarios</a>
+      "usuarios.html">Usuarios</a>
           </li>`;
       }
       this.ul.innerHTML += html;

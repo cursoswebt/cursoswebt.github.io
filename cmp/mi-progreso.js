@@ -2,8 +2,8 @@ class MiProgeso
   extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /* html */
-      `<progress max="50">
-        Procesando....
+      `<progress max="100">
+        Cargando…
       </progress>`;
   }
 }

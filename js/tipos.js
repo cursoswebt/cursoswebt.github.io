@@ -4,14 +4,14 @@
  */
 
 /**
- * @typedef {Object} Curso
+ * @typedef {Object} Pasatiempo
  * @property {string} nombre
  */
 
 /**
  * @typedef {Object} Usuario
  * @property {string[]} rolIds
- * @property {string} cursoId
+ * @property {string} pasatiempoId
  */
 
 // @ts-nocheck
@@ -22,4 +22,4 @@
  * @property {firebase.firestore.Timestamp} timestamp
  */
 
- export const __tipos = 0;
+export const __tipos = 0;
