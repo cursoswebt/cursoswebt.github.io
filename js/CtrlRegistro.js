@@ -11,7 +11,7 @@ import {
   import {
     checksRoles,
     guardaUsuario,
-    selectCurso
+    selectCursos
   } from "./usuarios.js";
   
   const forma = document["forma"];
@@ -26,7 +26,7 @@ import {
       ["Administrador"])) {
       forma.addEventListener(
         "submit", guarda);
-      selectCurso(
+      selectCursos(
         forma.cursoId, "");
       checksRoles(listaRoles, []);
     }

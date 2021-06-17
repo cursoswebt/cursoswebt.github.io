@@ -1,6 +1,6 @@
 import {
     getFirestore
-  } from "../lib/fabrica.js";
+  } from "../lib/auth.js";
   import {
     subeStorage
   } from "../lib/storage.js";
@@ -25,7 +25,7 @@ import {
     collection("Usuario");
   
   export function
-    selectCurso(select,
+    selectCursos(select,
       valor) {
     valor = valor || "";
     daoCurso.
@@ -40,7 +40,7 @@ import {
         },
         e => {
           muestraError(e);
-          selectCurso(
+          selectCursos(
             select, valor);
         }
       );

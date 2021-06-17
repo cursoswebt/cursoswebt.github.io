@@ -1,7 +1,7 @@
 import {
     getAuth,
     getFirestore
-  } from "../lib/fabrica.js";
+  } from "../lib/auth.js";
   import {
     cod,
     getString,
