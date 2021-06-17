@@ -23,7 +23,7 @@ import {
   
   async function protege(usuario) {
     if (tieneRol(usuario,
-      ["Aprendiz"])) {
+      ["Cliente"])) {
       usuarioId = usuario.email;
       consulta();
       forma.addEventListener(
