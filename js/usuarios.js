@@ -1,6 +1,6 @@
 import {
     getFirestore
-  } from "../lib/auth.js";
+  } from "../lib/fabrica.js";
   import {
     subeStorage
   } from "../lib/storage.js";

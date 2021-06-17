@@ -1,7 +1,7 @@
 import {
     getAuth,
     getFirestore
-  } from "../lib/auth.js";
+  } from "../lib/fabrica.js";
   import {
     urlStorage
   } from "../lib/storage.js";
